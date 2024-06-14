@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>ASL Recognition | Venkata</title>
+<meta name="keywords" content="">
+<meta name="description" content="Abstract Hand sign detection is an important concept for helping the challenged communicate. The project deals with the mentioned problem and uses deep connected neural networks for detection of hand signs and recognition of English alphabets. The wide spread of American Sign Language(ASL) was used for detection. Mediapipe framework was used for recognizing and extracting the keypoints through real time hand detection and saved in csv files which were fed to neural network for training.">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/projects/asl/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.4599eadb9eb2ad3d0a8d6827b41a8fda8f2f4af226b63466c09c5fddbc8706b7.css" integrity="sha256-RZnq256yrT0KjWgntBqP2o8vSvImtjRmwJxf3byHBrc=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/projects/asl/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="Venkata (Alt + H)">Venkata</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/projects" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      ASL Recognition
+    </h1>
+    <div class="post-meta"><span title='2022-12-07 00:00:00 +0000 UTC'>December 7, 2022</span>&nbsp;·&nbsp;10 min
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="eager" src="//localhost:1313/aslcover.png" alt="">
+        
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#abstract" aria-label="Abstract">Abstract</a></li>
+                <li>
+                    <a href="#introduction" aria-label="Introduction">Introduction</a></li>
+                <li>
+                    <a href="#method" aria-label="Method">Method</a><ul>
+                        
+                <li>
+                    <a href="#dataset" aria-label="Dataset">Dataset</a></li>
+                <li>
+                    <a href="#models" aria-label="Models">Models</a></li>
+                <li>
+                    <a href="#base-model" aria-label="Base Model">Base Model</a></li>
+                <li>
+                    <a href="#model-with-l1-regularizer-model-1" aria-label="Model with L1 Regularizer [Model 1]">Model with L1 Regularizer [Model 1]</a></li>
+                <li>
+                    <a href="#model-with-l1-regularizer-in-all-dense-layers-model-2" aria-label="Model with L1 Regularizer in all dense layers [Model 2]">Model with L1 Regularizer in all dense layers [Model 2]</a></li>
+                <li>
+                    <a href="#model-with-l2-regularizer-model-3" aria-label="Model with L2 Regularizer [Model 3]">Model with L2 Regularizer [Model 3]</a></li>
+                <li>
+                    <a href="#model-with-l2-regularizer-in-all-dense-layers-model-4" aria-label="Model with L2 Regularizer in all dense layers [Model 4]">Model with L2 Regularizer in all dense layers [Model 4]</a></li>
+                <li>
+                    <a href="#model-with-a-single-layer-of-50-dropout-rate-model-5" aria-label="Model with a single layer of 50% dropout rate [Model 5]">Model with a single layer of 50% dropout rate [Model 5]</a></li>
+                <li>
+                    <a href="#model-with-multiple-dropout-layers-model-6" aria-label="Model with multiple dropout layers [Model 6]">Model with multiple dropout layers [Model 6]</a></li>
+                <li>
+                    <a href="#model-with-batch-normalization-model-7" aria-label="Model with Batch Normalization [Model 7]">Model with Batch Normalization [Model 7]</a></li>
+                <li>
+                    <a href="#model-with-multiple-batch-normalization-layers-model-8" aria-label="Model with multiple Batch Normalization layers [Model 8]">Model with multiple Batch Normalization layers [Model 8]</a></li></ul>
+                </li>
+                <li>
+                    <a href="#evaluation-metrics" aria-label="Evaluation metrics">Evaluation metrics</a><ul>
+                        
+                <li>
+                    <a href="#accuracy" aria-label="Accuracy">Accuracy</a></li>
+                <li>
+                    <a href="#mean-squared-error" aria-label="Mean Squared Error">Mean Squared Error</a></li></ul>
+                </li>
+                <li>
+                    <a href="#analysis-and-discussion" aria-label="Analysis and discussion">Analysis and discussion</a></li>
+                <li>
+                    <a href="#conclusion" aria-label="Conclusion">Conclusion</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="abstract">Abstract<a hidden class="anchor" aria-hidden="true" href="#abstract">#</a></h2>
+<p>Hand sign detection is an important concept for helping the challenged communicate. The project deals with the mentioned problem and uses deep connected neural networks for detection of hand signs and recognition of English alphabets. The wide spread of American Sign Language(ASL) was used for detection. Mediapipe framework was used for recognizing and extracting the keypoints through real time hand detection and saved in csv files which were fed to neural network for training. pandas and other libraries have facilitated in operating and utilising the collected data. Non linear activation functions such as ReLu, tanh have used in combination with softmax at its final layer. Through the results obtained we have finalised that Data preprocessing plays in important role in model learning capabilities. Batch normalization has yielded better accuracy and prediction when compared with models that are not batch normalized.</p>
+<h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>Mediapipe is an open-source framework developed by google. The framework allows to capture the keypoints and landmarks of several parts of human body such as face, hand, body. In this project we mainly discuss on capturing keypoints and landmarks from the hands in real-time. Mediapipe has several in-built methods to extract the key points. The framework accesses the user webcam and with a custom function written, it extracts the landmarks from user`s hands with just a key press on keyboard. This method was followed to collect data for 26 English alphabets from both left and right hands. The framework also helps in saving storage space and training time as it directly extracts the landmarks into file without the need to store the images. A second method involving static images to extract the landmarks was also used. Where the kaggle dataset on ASL alphabets was fed into a custom method written using mediapipe which extracts the landmarks.</p>
+<h2 id="method">Method<a hidden class="anchor" aria-hidden="true" href="#method">#</a></h2>
+<h3 id="dataset">Dataset<a hidden class="anchor" aria-hidden="true" href="#dataset">#</a></h3>
+<p>Manually collected dataset was preferred over the kaggle dataset</p>
+<h3 id="models">Models<a hidden class="anchor" aria-hidden="true" href="#models">#</a></h3>
+<p>Eight models in total were used to compare the performances and impacts of using different regularizations, dropout, batch normalization configurations. The basic structure of all the models have a tensor of size 42 as input [each tensor indicating the x and y coordinates of individual keypoints], five dense layers for which each of them having tanh or ReLu as an activation function except the final output layer configured with softmax as activation function. the initial dense layer having 512 as the output for the consequent layer and gradually decreasing the output values to number of alphabets i.e 26. All the models have default batch size of 128 and 300 epochs for training</p>
+<h3 id="base-model">Base Model<a hidden class="anchor" aria-hidden="true" href="#base-model">#</a></h3>
+<p>As the name suggests this is the base model with no regularization, dropout, batch normalization. This model consists of an input which takes a tensor of size 42 as an input and has four subsequent dense layers each having tanh as their activation function and the final output layer having softmax as its activation function with 26 output values each indicating the individual english alphabets. This model has sigmoid as it’s optimizer and sparse categorical crossentropy as the loss function and accuracy and MSE[Mean Squared Error] as the evaluation metrics during model training and evaluation</p>
+<h3 id="model-with-l1-regularizer-model-1">Model with L1 Regularizer [Model 1]<a hidden class="anchor" aria-hidden="true" href="#model-with-l1-regularizer-model-1">#</a></h3>
+<p>The effect of L1 regularization on neural networks is to decrease the complexity of the model by reducing the number of weights and biases. L1 regularization is a technique used to prevent overfitting in neural networks. It does this by adding a penalty term to the cost function during training that is proportional to the sum of the absolute values of the weights and biases in the network. This penalty term encourages the network to reduce the number of weights and biases that are used to make predictions, which can help to prevent overfitting and improve the generalizability of the model. As a result, L1 regularization can improve the performance of neural networks on unseen data. This model consists of an input which takes a tensor of size 42 as an input and has four subsequent dense layers each having tanh as their activation function, where the first dense layer is configured with L1 regularizer and the final output layer having softmax as its activation function with 26 output values each indicating the individual english alphabets. This model has sigmoid as it’s optimizer and sparse categorical crossentropy as the loss function and accuracy and MSE[Mean Squared Error] as the evaluation metrics during model training and evaluation</p>
+<h3 id="model-with-l1-regularizer-in-all-dense-layers-model-2">Model with L1 Regularizer in all dense layers [Model 2]<a hidden class="anchor" aria-hidden="true" href="#model-with-l1-regularizer-in-all-dense-layers-model-2">#</a></h3>
+<p>This model consists of an input which takes a tensor of size 42 as an input and has four subsequent dense layers each having tanh as their activation function and L1 regularization applied, the final output layer having softmax as its activation function with 26 output values each indicating the individual english alphabets. This model has sigmoid as it’s optimizer and sparse categorical crossentropy as the loss function and accuracy and MSE[Mean Squared Error] as the evaluation metrics during model training and evaluation</p>
+<h3 id="model-with-l2-regularizer-model-3">Model with L2 Regularizer [Model 3]<a hidden class="anchor" aria-hidden="true" href="#model-with-l2-regularizer-model-3">#</a></h3>
+<p>As seen earlier, L1 regularization penalizes the sum of absolute values of the weights, whereas L2 regularization penalizes the sum of squares of the weights. This model consists of an input which takes a tensor of size 42 as an input and has four subsequent dense layers each having ReLu as their activation function, where the first dense layer is configured with L2 regularizer and the final output layer having softmax as its activation function with 26 output values each indicating the individual english alphabets. This model has adam optimizer and sparse categorical crossentropy as the loss function and accuracy and MSE[Mean Squared Error] as the evaluation metrics during model training and evaluation</p>
+<h3 id="model-with-l2-regularizer-in-all-dense-layers-model-4">Model with L2 Regularizer in all dense layers [Model 4]<a hidden class="anchor" aria-hidden="true" href="#model-with-l2-regularizer-in-all-dense-layers-model-4">#</a></h3>
+<p>This model consists of an input which takes a tensor of size 42 as an input and has four s ubsequent dense layers each having tanh as their activation function and L2 regularization applied, dense layer before the ouput layer having ReLu as activation function the final output layer having softmax as its activation function with 26 output values each indicating the individual english alphabets. This model has adam optimizer and sparse categorical crossentropy as the loss function and accuracy and MSE[Mean Squared Error] as the evaluation metrics during model training and evaluation</p>
+<h3 id="model-with-a-single-layer-of-50-dropout-rate-model-5">Model with a single layer of 50% dropout rate [Model 5]<a hidden class="anchor" aria-hidden="true" href="#model-with-a-single-layer-of-50-dropout-rate-model-5">#</a></h3>
+<p>Dropout is a regularization technique used to reduce overfitting in a neural network. It works by randomly dropping out, or setting to zero, a certain number of neurons in the network during training. This has the effect of forcing the network to learn multiple independent representations of the data, which can help prevent the network from overfitting to the training data. This model consists of an input which takes a tensor of size 42 as an input and has a dropout layer and four dense layers each having tanh as their activation function, dense layer before the ouput layer having ReLu as activation function the final output layer having softmax as its activation function with 26 output values each indicating the individual english alphabets. This model has adam optimizer and sparse categorical crossentropy as the loss function and accuracy and MSE[Mean Squared Error] as the evaluation metrics during model training and evaluation.</p>
+<h3 id="model-with-multiple-dropout-layers-model-6">Model with multiple dropout layers [Model 6]<a hidden class="anchor" aria-hidden="true" href="#model-with-multiple-dropout-layers-model-6">#</a></h3>
+<p>This model consists of multiple dropout layers with varying rates.It has four dropout layers out of which the first three have 50% dropout rate and the last one has 30% dropout rate. Apart from this model consists of an input which takes a tensor of size 42 as an input and four dense layers each having tanh as their activation function, dense layer before the ouput layer having ReLu as activation function the final output layer having softmax as its activation function with 26 output values each indicating the individual english alphabets. This model has adam optimizer and sparse categorical c rossentropy as the loss function and accuracy and MSE[Mean Squared Error] as the evaluation metrics during model training and evaluation.</p>
+<h3 id="model-with-batch-normalization-model-7">Model with Batch Normalization [Model 7]<a hidden class="anchor" aria-hidden="true" href="#model-with-batch-normalization-model-7">#</a></h3>
+<p>Batch normalization is a technique used to improve the performance and stability of neural networks. It works by normalizing the inputs to a layer in a neural network, which can help the network learn faster and reduce the amount of vanishing or exploding gradients. This model consists of an input which takes a tensor of size 42 as an input and four dense layers each having tanh as their activation function,a batch normalization layer, the final output lay er having softmax as its activation function with 26 output values each indicating the individual english alphabets. This mode l has adam optimizer and sparse categorical crossentropy as the loss function and accuracy and MSE[Mean Squared Error] as the e valuation metrics during model training and evaluation.</p>
+<h3 id="model-with-multiple-batch-normalization-layers-model-8">Model with multiple Batch Normalization layers [Model 8]<a hidden class="anchor" aria-hidden="true" href="#model-with-multiple-batch-normalization-layers-model-8">#</a></h3>
+<p>This model consists of an input which takes a tensor of size 42 as an input and four dense layer search having tanh as their activation function,a batch normalization layer after each dense layer, the final output layer having softmax as its activation function with 26 output values each indicating the individual english alphabets. This model has adam optimizer and sparse categorical crossentropy as the loss function and accuracy and MSE[Mean Squared Error] as the evaluation metrics during model training and evaluation.</p>
+<h2 id="evaluation-metrics">Evaluation metrics<a hidden class="anchor" aria-hidden="true" href="#evaluation-metrics">#</a></h2>
+<p>Each model has the same evaluation metrics. Accuracy and MSE[Mean Squared Error]</p>
+<h3 id="accuracy">Accuracy<a hidden class="anchor" aria-hidden="true" href="#accuracy">#</a></h3>
+<p>Accuracy is a metric that is used to evaluate the performance of a machine learning model. It is the percentage of correct predictions that the model makes on a dataset. This can be done by comparing the predicted values wit h the ground truth or true values. The number of correct predictions is then divided by the total number of predictions, and the resu lt is multiplied by 100 to obtain the accuracy as a percentage</p>
+<p>ACCURACY = TOTAL NO OF CORRECT PREDICTIONS / TOTAL NO OF PREDICTIONS</p>
+<h3 id="mean-squared-error">Mean Squared Error<a hidden class="anchor" aria-hidden="true" href="#mean-squared-error">#</a></h3>
+<p>Mean squared error (MSE) is a measure of the average squared difference between the predicted and actual values of a data set. It is often used as a metric to evaluate the performance of a machine learning model.</p>
+<p>MSE = 1⁄n Σ(yi − pi)2</p>
+<p>where yi is the ith observed value, pi is the corresponding predicted value for yi, and n is the number of observations. The Σ indicates that a summation is performed over all values of i.</p>
+<p><img loading="lazy" src="/asl.png" alt=""  />
+</p>
+<h2 id="analysis-and-discussion">Analysis and discussion<a hidden class="anchor" aria-hidden="true" href="#analysis-and-discussion">#</a></h2>
+<ul>
+<li>
+<p>When comparing Model 1 and Model 2, Model 1 performs better because too much regularization can also hinder the performance of the network by limiting its ability to capture important patterns in the data. And also if you observe Model 2’s performance drastically reduces because of over regularization.</p>
+</li>
+<li>
+<p>When Comparing Model 3 and Model 4, Model 3 performs better because of the reason similar to in the earlier point.</p>
+</li>
+<li>
+<p>When comparing Model 5 and Model 6, Model 5 performs better because dropout is introduced to reduce the overfitting of the model by generalization. But too many layers can also lead to dropping important features in data.</p>
+</li>
+<li>
+<p>When comparing Model 7 and Model 8, Model 7 performs better because too many batch normalization layers can also hinder the performance of the network by introducing unnecessary computational overhead and limiting its ability to capture complex patterns in the data. It is clear that by looking at the time taken to train Model 8 is almost 60% longer then Model 7.</p>
+</li>
+</ul>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>To summarize, the dataset was manually collected with the help of code written using mediapipe framework. Nine different models were created to show the effect of Regularization, dropout, Batch Normalization and it’s extreme cases and how training time does not have any impact on model’s accuracy. The model’s accuracy depends on the architecture of the network which is clear when we look at the results of multiple models that were trained, Model 7 i.e the model with single batch normalization layer was the best performing model.</p>
+<p>Below are the predictions given by the Model 7 in real-time :</p>
+<p><img loading="lazy" src="/aslpredictions.png" alt=""  />
+</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="//localhost:1313/">Venkata</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

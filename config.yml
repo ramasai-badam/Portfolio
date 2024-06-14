@@ -1,0 +1,34 @@
+baseURL: "https://ramasai-badam.github.io/Portfolio/"
+languageCode: en-us
+title: Venkata
+theme: "PaperMod"
+
+
+params:
+  profileMode:
+    enabled: true
+    title: "Venkata Badam"
+    subtitle: I'm a Driven Analyst with expertise in data manipulation, analysis, and visualization (SQL, Python, PowerBI). Seeking to leverage these skills in a Data Analyst role to empower data-driven decision-making. Proficiency in cloud technologies (AWS) and DevOps methodologies positions me for Cloud/DevOps Engineer opportunities as well.
+    imageUrl: "profilepic.png" # optional
+    imageWidth: 260 # custom size
+    imageHeight: 260 # custom size
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/ramasai-badam"
+    - name: linkedin
+      url: "https://linkedin.com/in/r98"
+    - name: email
+      url: badamramasai@gmail.com
+  showReadingTime: true
+  ShowToc: true
+
+menu:
+  main:
+    - identifier: Projects
+      name: Projects
+      url: /projects
+    - identifier: About
+      name: About
+      url: /
+    
