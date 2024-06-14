@@ -2,7 +2,7 @@
 title: 'Unmasking L.A - A Data-Driven Deep Dive into Crime'
 date: 2024-04-24
 cover:
-    image: /crime/cover.png
+    image: crimecover.png
 draft: false
 ---
 

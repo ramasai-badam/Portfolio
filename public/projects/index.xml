@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Projects on Venkata</title>
-    <link>//localhost:1313/projects/</link>
+    <link>http://localhost:1313/Portfolio/projects/</link>
     <description>Recent content in Projects on Venkata</description>
     <generator>Hugo -- 0.127.0</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/Portfolio/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unmasking L.A - PowerBI Dashboard</title>
-      <link>//localhost:1313/projects/powerbi/</link>
+      <link>http://localhost:1313/Portfolio/projects/powerbi/</link>
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/powerbi/</guid>
+      <guid>http://localhost:1313/Portfolio/projects/powerbi/</guid>
       <description>Expand the dashboard for a detailed view</description>
     </item>
     <item>
       <title>Unmasking L.A - A Data-Driven Deep Dive into Crime</title>
-      <link>//localhost:1313/projects/crime/</link>
+      <link>http://localhost:1313/Portfolio/projects/crime/</link>
       <pubDate>Wed, 24 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/crime/</guid>
+      <guid>http://localhost:1313/Portfolio/projects/crime/</guid>
       <description>Abstract This study investigates the multifaceted nature of crime in Los Angeles between 2020 and 2023 by analyzing official LAPD data to uncover intricate patterns and nuances across temporal, spatial, demographic, and crime-type dimensions. Spatial analysis identifies high/low crime areas and hotspots through geographic mapping. Victim demographics are correlated with crime types, locations, and times. Prevalent crimes are categorized, and their patterns are assessed in relation to reporting times and proximity to police stations.</description>
     </item>
     <item>
       <title>Linkit</title>
-      <link>//localhost:1313/projects/linkit/</link>
+      <link>http://localhost:1313/Portfolio/projects/linkit/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/linkit/</guid>
+      <guid>http://localhost:1313/Portfolio/projects/linkit/</guid>
       <description>Linkit is a file sharing web application built on Flask and hosted on AWS. Seamlessly integrated with AWS services, offering User Authentication, file storage, dynamic prefix creation.
 check it out here</description>
     </item>
     <item>
       <title>Post Call Analysis</title>
-      <link>//localhost:1313/projects/pca/</link>
+      <link>http://localhost:1313/Portfolio/projects/pca/</link>
       <pubDate>Sat, 16 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/pca/</guid>
+      <guid>http://localhost:1313/Portfolio/projects/pca/</guid>
       <description>Created a multifunctional conversation analysis application during a hackathon, offering audio input, playback, transcription, download capabilities, as well as summarization and sentiment analysis functionalities.
 check it out here</description>
     </item>
     <item>
       <title>Document Question Answering</title>
-      <link>//localhost:1313/projects/cohere/</link>
+      <link>http://localhost:1313/Portfolio/projects/cohere/</link>
       <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/cohere/</guid>
+      <guid>http://localhost:1313/Portfolio/projects/cohere/</guid>
       <description>Developed and hosted a Streamlit Web Application on Streamlit cloud for Document Question Answering LLM using Cohere API.
 The user can upload txt, csv, pdf files.
 Ask questions on the document uploaded.
@@ -50,31 +50,31 @@ Options to modify the temperature and tokens of the model.</description>
     </item>
     <item>
       <title>Knowledge Distillation &amp; Quantization</title>
-      <link>//localhost:1313/projects/quantization/</link>
+      <link>http://localhost:1313/Portfolio/projects/quantization/</link>
       <pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/quantization/</guid>
+      <guid>http://localhost:1313/Portfolio/projects/quantization/</guid>
       <description>Krishna Pranay Angara | Ramasai Badam | Nikhil Balachandra | Vishnu Koppera</description>
     </item>
     <item>
       <title>ASL Recognition</title>
-      <link>//localhost:1313/projects/asl/</link>
+      <link>http://localhost:1313/Portfolio/projects/asl/</link>
       <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/asl/</guid>
+      <guid>http://localhost:1313/Portfolio/projects/asl/</guid>
       <description>Abstract Hand sign detection is an important concept for helping the challenged communicate. The project deals with the mentioned problem and uses deep connected neural networks for detection of hand signs and recognition of English alphabets. The wide spread of American Sign Language(ASL) was used for detection. Mediapipe framework was used for recognizing and extracting the keypoints through real time hand detection and saved in csv files which were fed to neural network for training.</description>
     </item>
     <item>
       <title>Hosting a Static Website on AWS S3 with Google Domain</title>
-      <link>//localhost:1313/projects/staticsite/</link>
+      <link>http://localhost:1313/Portfolio/projects/staticsite/</link>
       <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/staticsite/</guid>
+      <guid>http://localhost:1313/Portfolio/projects/staticsite/</guid>
       <description>Embarking on the journey of hosting a static website is an exciting endeavor, especially when you&amp;rsquo;re determined to harness the power and scalability of AWS. Throughout this guide, I&amp;rsquo;ll share my hands-on experience of successfully hosting a static site on AWS S3, shedding light on the challenges I encountered and the strategies I employed to overcome them.
 Acquiring a Domain from Google Domains The journey began with a simple yet crucial step: securing the perfect domain name through Google Domains.</description>
     </item>
     <item>
       <title>Factors that affect the growth of Startups</title>
-      <link>//localhost:1313/projects/startups/</link>
+      <link>http://localhost:1313/Portfolio/projects/startups/</link>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/startups/</guid>
+      <guid>http://localhost:1313/Portfolio/projects/startups/</guid>
       <description>Introduction 1.1 Background This study focuses on how &amp;amp; what factors affect the growth of a startup. A Startup can be defined as a process when an individual or group of people start with an idea to solve a problem. Not only services but startups also products that can revolutionize the market.
 As simple as it is, a picture can tell much more than words. But, picture itself won&amp;rsquo;t be enough for others to understand what we want to convey.</description>
     </item>
