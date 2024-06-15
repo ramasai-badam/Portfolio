@@ -19,7 +19,7 @@ params:
     - name: linkedin
       url: "https://linkedin.com/in/r98"
     - name: email
-      url: badamramasai@gmail.com
+      url: mailto:badamramasai@gmail.com
   showReadingTime: true
   ShowToc: true
 
