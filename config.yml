@@ -23,6 +23,7 @@ params:
     - name: cv
       url: venkata_resume.pdf
   showReadingTime: true
+  
   ShowToc: true
 
 menu:
