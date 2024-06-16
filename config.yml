@@ -1,8 +1,8 @@
 baseURL: "https://portfolio.ramasai.dev/"
 languageCode: en-us
 title: Venkata
-theme: "PaperMod"
-
+theme: ["hugo-embed-pdf-shortcode","PaperMod"]
+enableInlineShortcodes: true
 
 params:
   profileMode:

@@ -2,41 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/Portfolio/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Portfolio/projects/powerbi/</loc>
+    <loc>http://localhost:1313/projects/powerbi/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Portfolio/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Portfolio/projects/crime/</loc>
+    <loc>http://localhost:1313/projects/crime/</loc>
     <lastmod>2024-04-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Portfolio/projects/linkit/</loc>
+    <loc>http://localhost:1313/projects/linkit/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Portfolio/projects/pca/</loc>
+    <loc>http://localhost:1313/projects/eel/</loc>
+    <lastmod>2023-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/pca/</loc>
     <lastmod>2023-09-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Portfolio/projects/cohere/</loc>
+    <loc>http://localhost:1313/projects/cohere/</loc>
     <lastmod>2023-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Portfolio/projects/quantization/</loc>
+    <loc>http://localhost:1313/projects/quantization/</loc>
     <lastmod>2023-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Portfolio/projects/asl/</loc>
+    <loc>http://localhost:1313/projects/asl/</loc>
     <lastmod>2022-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Portfolio/projects/staticsite/</loc>
+    <loc>http://localhost:1313/projects/staticsite/</loc>
     <lastmod>2022-11-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Portfolio/projects/startups/</loc>
+    <loc>http://localhost:1313/projects/startups/</loc>
     <lastmod>2020-07-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Portfolio/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/Portfolio/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
