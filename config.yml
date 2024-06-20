@@ -20,8 +20,8 @@ params:
       url: "https://linkedin.com/in/r98"
     - name: email
       url: mailto:badamramasai@gmail.com
-    - name: cv
-      url: venkata_resume.pdf
+    # - name: cv
+    #   url: venkata_resume.pdf
   showReadingTime: true
   
   ShowToc: true
