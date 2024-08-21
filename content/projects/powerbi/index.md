@@ -10,7 +10,7 @@ draft: false
 
 Expand the dashboard for a detailed view
 
-{{< powerbi "https://app.powerbi.com/view?r=eyJrIjoiYTgxMjllMGYtOWJiZS00YTdkLTk3OGEtYjM0MmZlNzgyZTZiIiwidCI6IjA0NmZlY2JlLWI0Y2MtNDM3Zi05ODM2LTY0OTdjOTk1OWI5NSIsImMiOjJ9" >}}
+{{< powerbi "https://app.powerbi.com/view?r=eyJrIjoiZGJiMzBiMGItNWM2ZS00YWQ5LTllOWItNDk0ZmQ4YjRmN2EwIiwidCI6IjA0NmZlY2JlLWI0Y2MtNDM3Zi05ODM2LTY0OTdjOTk1OWI5NSIsImMiOjJ9" >}}
 
     data source : https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data
 --------------------------------------------------------------------------------
