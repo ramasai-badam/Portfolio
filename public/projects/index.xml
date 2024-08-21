@@ -14,7 +14,7 @@
       <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/powerbi/</guid>
       <description>Expand the dashboard for a detailed view
-data source : https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data What steps did I take to integrate the data source? Optimized Data Fetch with SoQL: I created a Dataflow to act as a middleman between the LAPD&amp;rsquo;s web API (SODA API) and my dashboard. But instead of grabbing everything, I used SoQL filters within the API call to snag only the columns I actually need for my analysis. This keeps the data transfer lean and minimizes the load on LAPD&amp;rsquo;s servers.</description>
+data source : https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data What steps did I take to integrate the data source? ✔️Optimized Data Fetch with SoQL: I created a Dataflow to act as a middleman between the LAPD&amp;rsquo;s web API (SODA API) and my dashboard. But instead of grabbing everything, I used SoQL filters within the API call to snag only the columns I actually need for my analysis. This keeps the data transfer lean and minimizes the load on LAPD&amp;rsquo;s servers.</description>
     </item>
     <item>
       <title>Unmasking L.A - A Data-Driven Deep Dive into Crime</title>
