@@ -36,7 +36,7 @@ API errors also became a recurring obstacle. Some errors were vague, which made 
 Though this process was challenging, it was incredibly rewarding. I learned a lot about working with JSON, error handling, and API troubleshooting, skills that have since strengthened my technical abilities and problem-solving approach.
 
 
-### Normal summarization vs Few-Short Chain-of-Thought (CoT) :
+### Normal summarization vs Few-Shot Chain-of-Thought (CoT) :
 
 If we ask an LLM to summarize given text, it will indeed summarize it. However, the summary might not always align with our specific needs. LLMs may inadvertently omit important information that we consider crucial, as we haven't provided explicit guidance on what to prioritize or emphasize.
 On the other hand, few-shot Chain-of-Thought  prompting offers a more structured approach. By providing the LLM with a clear framework, we can guide its reasoning process and ensure that it focuses on the most relevant aspects of the text. Giving us a more accurate and informative summaries that better meet our requirements.
