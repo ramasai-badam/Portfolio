@@ -12,6 +12,9 @@ draft: false
 
 🔗 https://app.airops.com/public_apps/a5b053ed-3a94-4fc8-96cc-cec1878a62b7/run
 
+New updated workflow with much richer data : 
+
+🔗 https://app.airops.com/public_apps/cf4a3c94-36e1-4efa-a4dd-51a37862921e/run
 
 ### About Me : 
 
